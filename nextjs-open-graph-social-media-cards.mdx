@@ -20,11 +20,11 @@ Simply put, you want your blog posts to stand out when they are shared on social
 
 If you don't provide Open Graph metadata in your blog, a post might look like this when you share it:
 
-        <CustomImage src="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/tweet-without-open-graph.jpg" alt="Tweet without Open Graph metadata" width={400} height={269} />
+        <CustomImage src="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/tweet-without-open-graph.jpg" alt="Tweet without Open Graph metadata" width={400} height={269} />
 
 But if you do provide Open Graph metadata, a shared post might look like this instead: 
 
-        <CustomImage src="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/tweet-with-open-graph.jpg" alt="Tweet with Open Graph metadata" width={400} height={545} />
+        <CustomImage src="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/tweet-with-open-graph.jpg" alt="Tweet with Open Graph metadata" width={400} height={545} />
 
 ## How to Add Open Graph Social Media Cards to Your Blog 
 
@@ -38,15 +38,15 @@ This is what I did for my homepage in the root `layout.tsx` file:
 
 ```ts
 openGraph: {
-    title: "Dave Gray",
-    description: "Hello, I'm Dave. 👋 I teach coding and web development skills.",
-    url: 'https://www.davegray.codes/',
+    title: "Mubassim Ahmed Khan",
+    description: "Hello, I'm Mubassim. 👋 I teach coding and web development skills.",
+    url: 'https://www.mubassim-khan.netlify.app/',
     siteName: "Dave Gray's Blog",
     type: 'website',
     images: [
       {
-        url: 'https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png',
-        secureUrl: 'https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png',
+        url: 'https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png',
+        secureUrl: 'https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png',
         width: 1200,
         height: 630,
         alt: 'Preview image for Dave Gray',
@@ -68,8 +68,8 @@ And the output metadata inside the `<head>` of my homepage for the `openGraph ob
 <meta property="og:description" content="Hello, I'm Dave. 👋 I teach coding and web development skills.">
 <meta property="og:url" content="https://www.davegray.codes/">
 <meta property="og:site_name" content="Dave Gray's Blog">
-<meta property="og:image" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png">
-<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png">
+<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Preview image for Dave Gray">
@@ -91,7 +91,7 @@ twitter: {
     description: "Hello, I'm Dave. 👋 I teach coding and web development skills.",
     creator: '@yesdavidgray',
     images: {
-      url: 'https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png',
+      url: 'https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png',
       alt: 'Preview image for Dave Gray',
     }
   },
@@ -116,7 +116,7 @@ And the output metadata inside the `<head>` of my homepage for the `twitter obje
 <meta name="twitter:creator" content="@yesdavidgray">
 <meta name="twitter:title" content="Dave Gray">
 <meta name="twitter:description" content="Hello, I'm Dave. 👋 I teach coding and web development skills.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/og-card.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/og-card.png">
 <meta name="twitter:image:alt" content="Preview image for Dave Gray">
 ```
 To examine how Twitter, LinkedIn, and Facebook use the metadata above, you can share [my homepage](https://www.davegray.codes/) and see the social media cards those platforms create when you post my webpage link.
@@ -141,8 +141,8 @@ openGraph: {
     authors: ['Dave Gray'],
     images: [
         {
-            url: `https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/${meta.id}.png`,
-            secureUrl: `https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/${meta.id}.png`,
+            url: `https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/${meta.id}.png`,
+            secureUrl: `https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/${meta.id}.png`,
             width: 1200,
             height: 630,
             alt: `Preview image for ${meta.title}`,
@@ -156,7 +156,7 @@ twitter: {
     description: meta.description, 
     creator: '@yesdavidgray',
     images: { 
-        url: `https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/${meta.id}.png`,
+        url: `https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/${meta.id}.png`,
         alt: `Preview image for ${meta.title}`, 
     },
 },
@@ -175,8 +175,8 @@ Here's the output metadata inside the `<head>` of one of my blog posts from both
 <meta property="og:description" content="Discovering how much Next.js Metadata I need to provide for individual pages of my blog.">
 <meta property="og:url" content="https://www.davegray.codes/posts/nextjs-ordering-merging-metadata">
 <meta property="og:site_name" content="Dave Gray's Blog">
-<meta property="og:image" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/nextjs-ordering-merging-metadata.png">
-<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/nextjs-ordering-merging-metadata.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/nextjs-ordering-merging-metadata.png">
+<meta property="og:image:secure_url" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/nextjs-ordering-merging-metadata.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Preview image for Next.js: Ordering and Merging Metadata">
@@ -191,7 +191,7 @@ Here's the output metadata inside the `<head>` of one of my blog posts from both
 <meta name="twitter:creator" content="@yesdavidgray">
 <meta name="twitter:title" content="Next.js: Ordering and Merging Metadata">
 <meta name="twitter:description" content="Discovering how much Next.js Metadata I need to provide for individual pages of my blog.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/gitdagray/my-blogposts/main/images/nextjs-ordering-merging-metadata.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Mubassim-Khan/Blogs-MD/master/images/nextjs-ordering-merging-metadata.png">
 <meta name="twitter:image:alt" content="Preview image for Next.js: Ordering and Merging Metadata">
 ```
 Note that none of the meta tags above are guaranteed to be next to each other inside the `<head>` element, but they are in there. 
